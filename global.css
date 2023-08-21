@@ -8,6 +8,7 @@ body {
 ::before,
 ::after {
   border-width: 0;
+  box-sizing: border-box;
 }
 .popup-overlay {
   @apply flex flex-col fixed inset-0;
