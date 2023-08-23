@@ -24,74 +24,79 @@
   <!-- bg-red-100 sm:bg-yellow-100 lg:bg-blue-100 xl:bg-green-100 -->
   <body class="font-inter w-full max-w-[100vw]">
     <!-- Navbar -->
-    <nav class="w-full max-w-[100vw]">
-      <div class="w-full border-solid border-b-2 border-[#E1E1E0]">
+    <div class="w-full max-w-[100vw]">
+      <header class="w-full border-solid border-b-2 border-gray-light">
         <div class="w-full max-w-[1550px] m-auto pb-3">
           <div
             class="w-full h-full flex justify-between gap-5 flex-col xl:flex-row p-5 md:p-8"
           >
-            <img
-              class="w-full h-fit max-w-[250px] mx-auto xl:mx-0"
-              src="/public/sannasa_logo.png"
-            />
-            <img
-              class="w-full h-fit max-w-[550px] mx-auto"
-              src="/public/ad.png"
-            />
-
             <div
-              class="flex flex-col sm:flex-row justify-between gap-5 w-fit h-fit max-w-[900px] mx-auto"
+              class="w-full flex flex-col xl:flex-row items-center gap-5 flex-grow relative"
+            >
+              <img
+                class="w-full h-fit max-w-[330px]"
+                src="/public/sannasa_logo.png"
+              />
+              <img
+                class="flex-shrink max-w-[300px] sm:max-w-[500px] xl:max-w-[460px] 2xl:max-w-[690px] w-fit"
+                src="/public/omega_ad_short.png"
+              />
+            </div>
+
+            <!-- Socials -->
+            <div
+              class="flex flex-col sm:flex-row justify-end gap-5 h-fit mx-auto w-full flex-grow-0"
             >
               <div class="flex gap-1">
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-facebook-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-instagram-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-linkedin-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-youtube-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-twitter-white.svg"
                   />
-                </div>
+                </a>
               </div>
 
-              <div class="font-medium">
+              <div class="font-medium flex flex-col items-end">
                 <div
-                  class="w-[150px] h-fit py-2 px-3 flex items-center border-[1.5px] border-solid border-primary-dark rounded-[5px]"
+                  class="w-[150px] h-fit py-2 px-3 flex items-center border-[1.5px] border-solid border-primary-dark rounded-5"
                 >
                   <img width="24" src="/public/icons/Icon=britain.svg" />
                   <div class="ml-2">English</div>
@@ -107,10 +112,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div
-        class="w-full h-[40px] md:h-[55px] border-solid border-b-2 border-[#E1E1E0]"
+      <nav
+        class="w-full h-[40px] md:h-[55px] border-solid border-b-2 border-gray-light"
       >
         <div
           class="w-full h-full max-w-[1550px] mx-auto flex justify-between px-5 md:px-8"
@@ -118,33 +123,75 @@
           <div
             class="max-w-screen scrollbar-hide overflow-x-auto h-full items-center flex gap-5 font-medium text-sm md:text-base"
           >
-            <div
-              class="h-full border-b-2 border-solid border-secondary text-secondary flex items-center justify-center px-2"
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all border-b-2 border-solid border-secondary text-secondary flex items-center justify-center px-2"
             >
               Home
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">News</div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+              >News</a
+            >
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Interviews
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Documentary
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Entertainment
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Sports
-            </div>
-            <div
-              class="h-full px-2 flex items-center justify-center whitespace-nowrap"
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center whitespace-nowrap"
             >
               My Ads
-            </div>
+            </a>
+          </div>
+
+          <div class="w-fit h-full items-center gap-3 hidden xl:flex">
+            <!-- -->
+            <button
+              class="w-[200px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+            >
+              POST YOUR AD
+            </button>
+
+            <button
+              class="w-[200px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+            >
+              MY ADS
+            </button>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
+    <!-- Mobile ad buttons -->
+    <div class="w-fit m-auto h-full items-center gap-3 flex xl:hidden mt-4">
+      <!-- -->
+      <button
+        class="w-[150px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+      >
+        POST YOUR AD
+      </button>
+
+      <button
+        class="w-[150px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+      >
+        MY ADS
+      </button>
+    </div>
 
     <main class="w-full max-w-[1550px] mx-auto mt-8">
       <div class="w-full mt-8 flex items-center justify-center px-4">
@@ -154,7 +201,7 @@
       <div class="m-5 md:m-8">
         <!-- Breadcrumbs -->
         <div
-          class="w-full border-solid border-b-2 border-[#E1E1E0] mt-10 pb-3 text-sm flex gap-1 font-medium items-center"
+          class="w-full border-solid border-b-2 border-gray-light mt-10 pb-3 text-sm flex gap-1 font-medium items-center"
         >
           <div class="flex items-center gap-1 opacity-80">
             <img class="w-3" src="/public/icons/Icon=home.svg" />
@@ -176,12 +223,12 @@
 
         -->
         <div
-          class="w-full p-3 md:p-5 border border-solid border-[#BDBDBD] rounded flex flex-col md:flex-row gap-3 items-center mt-8"
+          class="w-full p-3 md:p-5 border border-solid border-gray-dark rounded flex flex-col md:flex-row gap-3 items-center mt-8"
         >
           <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-3 flex-grow">
             <div class="relative">
               <input
-                class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB] pl-8"
+                class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark pl-8"
                 placeholder="Select Location *"
               />
 
@@ -197,23 +244,23 @@
                 class="w-3 absolute top-1/2 -translate-y-1/2 left-3"
               />
               <input
-                class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB] pl-8"
+                class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark pl-8"
                 placeholder="Electronics"
               />
             </div>
 
             <input
-              class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB]"
+              class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark"
               placeholder="What are you looking for"
             />
           </div>
 
           <!-- button -->
-          <div
-            class="w-fit rounded-[5px] bg-secondary hover:bg-secondary/75 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm relative leading-[20px] uppercase font-medium"
+          <button
+            class="w-fit rounded-5 bg-secondary hover:bg-secondary/75 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm relative leading-[20px] uppercase font-medium"
           >
             Search
-          </div>
+          </button>
         </div>
 
         <!----
@@ -234,70 +281,70 @@
           <!--  Top Ads-->
           <div class="w-full max-w-full xl:max-w-[400px] flex-shrink-0">
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4"
             >
               <div class="font-medium font-markazi text-4xl">Filters</div>
             </div>
 
             <!-- Ad tags title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4"
             >
               <div class="font-medium font-markazi text-2xl">Ad Tags</div>
             </div>
 
             <!-- Ad tags filters -->
             <div class="w-full grid grid-cols-3 gap-2">
-              <div
-                class="bg-secondary hover:bg-secondary/80 transition-all cursor-pointer w-full py-2 text-white flex items-center justify-center border border-solid border-black rounded-[5px]"
+              <button
+                class="bg-secondary hover:bg-secondary/80 text-sm transition-all cursor-pointer w-full py-2 text-white flex items-center justify-center border border-solid border-black rounded-5"
               >
                 All
-              </div>
+              </button>
 
-              <div
-                class="w-full hover:opacity-70 transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-[5px]"
+              <button
+                class="w-full bg-white text-sm hover:opacity-70 transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-5"
               >
                 Top Ads
-              </div>
+              </button>
 
-              <div
-                class="w-full hover:opacity-70 transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-[5px]"
+              <button
+                class="w-full bg-white text-sm hover:opacity-70 transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-5"
               >
                 Premium Ads
-              </div>
+              </button>
             </div>
 
             <!-- Type title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4 mt-7"
             >
               <div class="font-medium font-markazi text-2xl">Type</div>
             </div>
 
             <!-- Type filters -->
             <div class="w-full grid grid-cols-3 gap-2">
-              <div
-                class="bg-secondary hover:bg-secondary/80 transition-all cursor-pointer w-full py-2 text-white flex items-center justify-center border border-solid border-black rounded-[5px]"
+              <button
+                class="bg-secondary hover:bg-secondary/80 text-sm transition-all cursor-pointer w-full py-2 text-white flex items-center justify-center border border-solid border-black rounded-5"
               >
                 Sell
-              </div>
+              </button>
 
-              <div
-                class="w-full hover:opacity-70 transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-[5px]"
+              <button
+                class="w-full hover:opacity-70 bg-white text-sm transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-5"
               >
                 Exchange
-              </div>
+              </button>
 
-              <div
-                class="w-full hover:opacity-70 transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-[5px]"
+              <button
+                class="w-full hover:opacity-70 bg-white text-sm transition-all cursor-pointer py-2 text-black flex items-center justify-center border border-solid border-black rounded-5"
               >
                 Jobs
-              </div>
+              </button>
             </div>
 
             <!-- Price Range title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4 mt-7"
             >
               <div class="font-medium font-markazi text-2xl">Price Range</div>
             </div>
@@ -313,16 +360,16 @@
 
               <div class="mt-2">Price: Rs.0 - Rs. 260,000</div>
 
-              <div
-                class="w-[111px] uppercase text-sm bg-secondary hover:bg-secondary/80 transition-all cursor-pointer mt-4 py-2 text-white flex items-center justify-center rounded-[5px]"
+              <button
+                class="w-[111px] uppercase text-sm bg-secondary hover:bg-secondary/80 transition-all cursor-pointer mt-4 py-2 text-white flex items-center justify-center rounded-5"
               >
                 Filter
-              </div>
+              </button>
             </div>
 
             <!-- Category title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4 mt-7"
             >
               <div class="font-medium font-markazi text-2xl">Category</div>
             </div>
@@ -394,7 +441,7 @@
 
             <!-- Location title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4 mt-7"
             >
               <div class="font-medium font-markazi text-2xl">Location</div>
             </div>
@@ -414,7 +461,7 @@
 
             <!-- Location title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4 mt-7"
             >
               <div class="font-medium font-markazi text-2xl">Radius Search</div>
             </div>
@@ -423,7 +470,7 @@
             <div class="w-full">
               <div class="w-full max-w-xs mx-auto relative">
                 <input
-                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB]"
+                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark"
                   placeholder="What are you looking for"
                 />
 
@@ -445,7 +492,7 @@
 
             <!-- Ratings title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-1 mb-4 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-1 mb-4 mt-7"
             >
               <div class="font-medium font-markazi text-2xl">Ratings</div>
             </div>
@@ -504,13 +551,30 @@
                 3.0 & Up
               </div>
             </div>
+
+            <div class="bg-gray-light h-px w-full mt-8"></div>
+
+            <!-- Clear / Filter buttons-->
+            <div class="grid grid-cols-2 gap-3">
+              <button
+                class="w-full h-[52px] uppercase whitespace-nowrap text-sm text-secondary border border-secondary transition-all cursor-pointer mt-4 py-2 bg-white flex items-center justify-center rounded-5"
+              >
+                CLEAR FILTERS
+              </button>
+
+              <button
+                class="w-full h-[52px] uppercase whitespace-nowrap text-sm bg-secondary transition-all cursor-pointer mt-4 py-2 text-white flex items-center justify-center rounded-5"
+              >
+                APPLY FILTERS
+              </button>
+            </div>
           </div>
 
           <!-- Search Results -->
           <div class="w-auto flex-grow">
             <!-- Title-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex flex-col md:flex-row justify-between pb-1 mb-4"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex flex-col md:flex-row justify-between pb-1 mb-4"
             >
               <div class="font-medium font-markazi text-2xl">
                 Showing 1-9 of 10 results
@@ -519,7 +583,7 @@
               <!-- Rigt icons-->
               <div class="w-full md:w-fit flex gap-3">
                 <div
-                  class="w-full md:w-fit flex justify-between px-3 py-2 text-sm border border-solid border-black rounded-[5px] cursor-pointer"
+                  class="w-full md:w-fit flex justify-between px-3 py-2 text-sm border border-solid border-black rounded-5 cursor-pointer"
                 >
                   Recently Added (latest)
                   <img
@@ -528,35 +592,35 @@
                   />
                 </div>
 
-                <div
-                  class="h-[38px] w-[38px] border border-solid border-black rounded-[5px] cursor-pointer grid place-items-center"
+                <button
+                  class="h-[38px] w-[38px] border border-solid border-black rounded-5 cursor-pointer grid place-items-center"
                 >
                   <img src="/public/icons/Icon=List.svg" class="w-5" />
-                </div>
+                </button>
 
-                <div
-                  class="h-[38px] w-[38px] border border-solid border-black rounded-[5px] cursor-pointer grid place-items-center"
+                <button
+                  class="h-[38px] w-[38px] border border-solid border-black rounded-5 cursor-pointer grid place-items-center"
                 >
                   <img src="/public/icons/Icon=Tiles.svg" class="w-5" />
-                </div>
+                </button>
               </div>
             </div>
 
             <!-- List -->
             <div class="flex flex-col gap-3">
               <!-- Premium Ad Result -->
-              <div
-                class="w-full flex border-[1.5px] border-solid border-secondary rounded-[6px] bg-[#FFFCF8] p-[6px] gap-7 relative"
+              <a
+                class="w-full group flex border-[1.5px] border-solid border-secondary rounded-5 bg-secondary-50 p-[6px] gap-7 relative"
               >
                 <img
                   src="/public/rectangle-514@2x.png"
-                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-[3px]"
+                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-3"
                 />
 
                 <!-- Details -->
                 <div class="flex flex-col pt-0 md:pt-3 gap-1 md:gap-2">
                   <div
-                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] md:max-w-full leading-5"
+                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] group-hover:underline md:max-w-full leading-5"
                   >
                     MacBook Air M2 512GB 2022 Model
                   </div>
@@ -606,21 +670,21 @@
                 >
                   Premium Ad
                 </div>
-              </div>
+              </a>
 
               <!-- Premium Ad Result -->
-              <div
-                class="w-full flex border-[1.5px] border-solid border-secondary rounded-[6px] bg-[#FFFCF8] p-[6px] gap-7 relative"
+              <a
+                class="w-full group flex border-[1.5px] border-solid border-secondary rounded-5 bg-secondary-50 p-[6px] gap-7 relative"
               >
                 <img
                   src="/public/rectangle-514@2x.png"
-                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-[3px]"
+                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-3"
                 />
 
                 <!-- Details -->
                 <div class="flex flex-col pt-0 md:pt-3 gap-1 md:gap-2">
                   <div
-                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] md:max-w-full leading-5"
+                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] group-hover:underline md:max-w-full leading-5"
                   >
                     MacBook Air M2 512GB 2022 Model
                   </div>
@@ -670,21 +734,21 @@
                 >
                   Premium Ad
                 </div>
-              </div>
+              </a>
 
               <!-- Top Ad Result -->
-              <div
-                class="w-full flex border-[1.5px] border-solid border-primary rounded-[6px] p-[6px] gap-7 relative"
+              <a
+                class="w-full group flex border-[1.5px] border-solid border-primary rounded-5 p-[6px] gap-7 relative"
               >
                 <img
                   src="/public/rectangle-514@2x.png"
-                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-[3px]"
+                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-3"
                 />
 
                 <!-- Details -->
                 <div class="flex flex-col pt-0 md:pt-3 gap-1 md:gap-2">
                   <div
-                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] md:max-w-full leading-5"
+                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px group-hover:underline md:max-w-full leading-5"
                   >
                     MacBook Air M2 512GB 2022 Model
                   </div>
@@ -734,21 +798,21 @@
                 >
                   Premium Ad
                 </div>
-              </div>
+              </a>
 
               <!-- Top Ad Result -->
-              <div
-                class="w-full flex border-[1.5px] border-solid border-primary rounded-[6px] p-[6px] gap-7 relative"
+              <a
+                class="w-full group flex border-[1.5px] border-solid border-primary rounded-5 p-[6px] gap-7 relative"
               >
                 <img
                   src="/public/rectangle-514@2x.png"
-                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-[3px]"
+                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-3"
                 />
 
                 <!-- Details -->
                 <div class="flex flex-col pt-0 md:pt-3 gap-1 md:gap-2">
                   <div
-                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] md:max-w-full leading-5"
+                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px group-hover:underline md:max-w-full leading-5"
                   >
                     MacBook Air M2 512GB 2022 Model
                   </div>
@@ -798,71 +862,7 @@
                 >
                   Premium Ad
                 </div>
-              </div>
-
-              <!-- Top Ad Result -->
-              <div
-                class="w-full flex border-[1.5px] border-solid border-primary rounded-[6px] p-[6px] gap-7 relative"
-              >
-                <img
-                  src="/public/rectangle-514@2x.png"
-                  class="w-[140px] md:w-[230px] h-[100px] md:h-[180px] object-cover rounded-[3px]"
-                />
-
-                <!-- Details -->
-                <div class="flex flex-col pt-0 md:pt-3 gap-1 md:gap-2">
-                  <div
-                    class="text-xl md:text-2xl font-medium font-markazi max-w-[100px] md:max-w-full leading-5"
-                  >
-                    MacBook Air M2 512GB 2022 Model
-                  </div>
-
-                  <div class="text-gray text-sm md:text-base">
-                    Computers & Tablets
-                  </div>
-                  <div class="text-primary text-xl md:text-2xl font-bold">
-                    Rs 242,500.00
-                  </div>
-
-                  <div
-                    class="flex text-xs md:text-sm items-center gap-3 mt-2 flex-wrap"
-                  >
-                    <!-- Icon with text -->
-                    <div class="flex items-center gap-1 opacity-75">
-                      <img src="/public/icons/Icon=pricetags.svg" class="w-3" />
-                      Sell
-                    </div>
-
-                    <!-- Icon with text -->
-                    <div class="flex items-center gap-1 opacity-75">
-                      <img
-                        src="/public/icons/Icon=time-sharp.svg"
-                        class="w-3"
-                      />
-                      6 Days Ago
-                    </div>
-
-                    <!-- Icon with text -->
-                    <div class="flex items-center gap-1 opacity-75">
-                      <img src="/public/icons/Icon=location.svg" class="w-3" />
-                      Colombo
-                    </div>
-
-                    <!-- Icon with text -->
-                    <div class="flex items-center gap-1 opacity-75">
-                      <img src="/public/icons/Icon=eye.svg" class="w-3" />
-                      234 Views
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Ad tytpe tag-->
-                <div
-                  class="w-fit bg-primary py-1 px-[6px] text-white absolute top-1 right-1 text-xs md:text-sm rounded-sm"
-                >
-                  Premium Ad
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
@@ -881,7 +881,7 @@
 
 
     -->
-    <footer class="w-full bg-[#101010]">
+    <footer class="w-full bg-black-footer">
       <div class="w-full max-w-[1550px] mx-auto mt-8 px-5 md:px-8 py-11">
         <!-- Line 1 -->
         <div
@@ -895,7 +895,7 @@
           <div class="text-white flex items-center gap-5">
             Do you want to be a reporter? Apply Now!
             <button
-              class="bg-secondary text-base cursor-pointer text-black font-montserrat uppercase py-2.5 px-4 w-[185px] font-medium rounded-[5px] flex items-center justify-center"
+              class="bg-secondary text-base cursor-pointer text-black font-montserrat uppercase py-2.5 px-4 w-[185px] font-medium rounded-5 flex items-center justify-center"
             >
               Register now
             </button>
@@ -915,7 +915,7 @@
 
             <div class="mt-3 flex">
               <input
-                class="w-full max-w-[335px] text-white bg-transparent pt-[10px] pb-[21px] border-b border-solid border-white/10 outline-none caret-white"
+                class="w-full max-w-[335px] text-white text-base bg-transparent pt-[10px] pb-[21px] border-b border-solid border-white/10 outline-none caret-white"
                 placeholder="Email address"
               />
 
@@ -930,87 +930,87 @@
             <!-- Media-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">Media</div>
-              <div class="whitespace-nowrap">About us</div>
-              <div class="whitespace-nowrap">Contact Us</div>
-              <div class="whitespace-nowrap">Privacy Policy</div>
-              <div class="whitespace-nowrap">Terms & Conditions</div>
+              <a class="whitespace-nowrap">About us</a>
+              <a class="whitespace-nowrap">Contact Us</a>
+              <a class="whitespace-nowrap">Privacy Policy</a>
+              <a class="whitespace-nowrap">Terms & Conditions</a>
             </div>
 
             <!-- My Ads-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">My Ads</div>
-              <div class="whitespace-nowrap">Sell Fast</div>
-              <div class="whitespace-nowrap">Ad Promotions</div>
-              <div class="whitespace-nowrap">Privacy Policy</div>
-              <div class="whitespace-nowrap">Terms & Conditions</div>
+              <a class="whitespace-nowrap">Sell Fast</a>
+              <a class="whitespace-nowrap">Ad Promotions</a>
+              <a class="whitespace-nowrap">Privacy Policy</a>
+              <a class="whitespace-nowrap">Terms & Conditions</a>
             </div>
 
             <!-- Contact Us-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">Contact Us</div>
-              <div class="whitespace-nowrap">info@sannasa.lk</div>
-              <div class="whitespace-nowrap">WhatsApp</div>
+              <a class="whitespace-nowrap">info@sannasa.lk</a>
+              <a class="whitespace-nowrap">WhatsApp</a>
             </div>
 
             <!-- Follow us-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">Follow Us</div>
               <div class="flex gap-1">
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-facebook.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-instagram.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-linkedin.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-youtube.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-twitter.svg"
                   />
-                </div>
+                </a>
               </div>
 
               <div class="flex gap-1 items-center">
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-whatsapp.svg"
                   />
-                </div>
+                </a>
                 Chat on WhatsApp
               </div>
             </div>

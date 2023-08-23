@@ -24,74 +24,79 @@
   <!-- bg-red-100 sm:bg-yellow-100 lg:bg-blue-100 xl:bg-green-100 -->
   <body class="font-inter w-full max-w-[100vw]">
     <!-- Navbar -->
-    <nav class="w-full max-w-[100vw]">
-      <div class="w-full border-solid border-b-2 border-[#E1E1E0]">
+    <div class="w-full max-w-[100vw]">
+      <header class="w-full border-solid border-b-2 border-gray-light">
         <div class="w-full max-w-[1550px] m-auto pb-3">
           <div
             class="w-full h-full flex justify-between gap-5 flex-col xl:flex-row p-5 md:p-8"
           >
-            <img
-              class="w-full h-fit max-w-[250px] mx-auto xl:mx-0"
-              src="/public/sannasa_logo.png"
-            />
-            <img
-              class="w-full h-fit max-w-[550px] mx-auto"
-              src="/public/omega_ad.png"
-            />
-
             <div
-              class="flex flex-col sm:flex-row justify-between gap-5 w-fit h-fit max-w-[900px] mx-auto"
+              class="w-full flex flex-col xl:flex-row items-center gap-5 flex-grow relative"
+            >
+              <img
+                class="w-full h-fit max-w-[330px]"
+                src="/public/sannasa_logo.png"
+              />
+              <img
+                class="flex-shrink max-w-[300px] sm:max-w-[500px] xl:max-w-[460px] 2xl:max-w-[690px] w-fit"
+                src="/public/omega_ad_short.png"
+              />
+            </div>
+
+            <!-- Socials -->
+            <div
+              class="flex flex-col sm:flex-row justify-end gap-5 h-fit mx-auto w-full flex-grow-0"
             >
               <div class="flex gap-1">
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-facebook-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-instagram-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-linkedin-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-youtube-white.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                <a
+                  class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] flex items-center justify-center bg-primary-dark rounded-5"
                 >
                   <img
                     class="w-[18px] sm:w-[24px]"
                     src="/public/icons/Icon=logo-twitter-white.svg"
                   />
-                </div>
+                </a>
               </div>
 
-              <div class="font-medium">
+              <div class="font-medium flex flex-col items-end">
                 <div
-                  class="w-[150px] h-fit py-2 px-3 flex items-center border-[1.5px] border-solid border-primary-dark rounded-[5px]"
+                  class="w-[150px] h-fit py-2 px-3 flex items-center border-[1.5px] border-solid border-primary-dark rounded-5"
                 >
                   <img width="24" src="/public/icons/Icon=britain.svg" />
                   <div class="ml-2">English</div>
@@ -107,10 +112,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div
-        class="w-full h-[40px] md:h-[55px] border-solid border-b-2 border-[#E1E1E0]"
+      <nav
+        class="w-full h-[40px] md:h-[55px] border-solid border-b-2 border-gray-light"
       >
         <div
           class="w-full h-full max-w-[1550px] mx-auto flex justify-between px-5 md:px-8"
@@ -118,33 +123,75 @@
           <div
             class="max-w-screen scrollbar-hide overflow-x-auto h-full items-center flex gap-5 font-medium text-sm md:text-base"
           >
-            <div
-              class="h-full border-b-2 border-solid border-secondary text-secondary flex items-center justify-center px-2"
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all border-b-2 border-solid border-secondary text-secondary flex items-center justify-center px-2"
             >
               Home
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">News</div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+              >News</a
+            >
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Interviews
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Documentary
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Entertainment
-            </div>
-            <div class="h-full px-2 flex items-center justify-center">
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center"
+            >
               Sports
-            </div>
-            <div
-              class="h-full px-2 flex items-center justify-center whitespace-nowrap"
+            </a>
+            <a
+              class="h-full cursor-pointer hover:opacity-60 transition-all px-2 flex items-center justify-center whitespace-nowrap"
             >
               My Ads
-            </div>
+            </a>
+          </div>
+
+          <div class="w-fit h-full items-center gap-3 hidden xl:flex">
+            <!-- -->
+            <button
+              class="w-[200px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+            >
+              POST YOUR AD
+            </button>
+
+            <button
+              class="w-[200px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+            >
+              MY ADS
+            </button>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
+    <!-- Mobile ad buttons -->
+    <div class="w-fit m-auto h-full items-center gap-3 flex xl:hidden mt-4">
+      <!-- -->
+      <button
+        class="w-[150px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+      >
+        POST YOUR AD
+      </button>
+
+      <button
+        class="w-[150px] whitespace-nowrap text-sm rounded-5 bg-primary text-white font-medium shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm text-primary-light-default font-inter"
+      >
+        MY ADS
+      </button>
+    </div>
 
     <main class="w-full max-w-[1550px] mx-auto mt-8">
       <div class="w-full mt-8 flex items-center justify-center px-4">
@@ -154,7 +201,7 @@
       <div class="m-5 md:m-8">
         <!-- Breadcrumbs -->
         <div
-          class="w-full border-solid border-b-2 border-[#E1E1E0] mt-10 pb-3 text-sm flex gap-1 font-medium items-center"
+          class="w-full border-solid border-b-2 border-gray-light mt-10 pb-3 text-sm flex gap-1 font-medium items-center"
         >
           <div class="flex items-center gap-1 opacity-80">
             <img class="w-3" src="/public/icons/Icon=home.svg" />
@@ -192,7 +239,7 @@
             <!-- News -->
             <!-- Top bar-->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex flex-col pb-2 mb-7 gap-2"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex flex-col pb-2 mb-7 gap-2"
             >
               <div
                 class="bg-secondary px-3 py-1 w-fit text-sm text-white rounded-sm"
@@ -235,32 +282,32 @@
                 <div>Share:</div>
 
                 <div class="flex gap-1">
-                  <div
-                    class="w-[30px] h-[30px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                  <a
+                    class="w-[30px] h-[30px] flex items-center justify-center bg-primary-dark rounded-5"
                   >
                     <img
                       class="w-[18px]"
                       src="/public/icons/Icon=logo-facebook-white.svg"
                     />
-                  </div>
+                  </a>
 
-                  <div
-                    class="w-[30px] h-[30px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                  <a
+                    class="w-[30px] h-[30px] flex items-center justify-center bg-primary-dark rounded-5"
                   >
                     <img
                       class="w-[18px]"
                       src="/public/icons/Icon=logo-linkedin-white.svg"
                     />
-                  </div>
+                  </a>
 
-                  <div
-                    class="w-[30px] h-[30px] flex items-center justify-center bg-primary-dark rounded-[5px]"
+                  <a
+                    class="w-[30px] h-[30px] flex items-center justify-center bg-primary-dark rounded-5"
                   >
                     <img
                       class="w-[18px]"
                       src="/public/icons/Icon=logo-twitter-white.svg"
                     />
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -276,7 +323,7 @@
 
 
             -->
-            <div class="w-full flex flex-col gap-10">
+            <article class="w-full flex flex-col gap-10">
               <img
                 src="/public/rectangle-56@2x.png"
                 class="w-full max-w-md m-auto"
@@ -361,11 +408,11 @@
               <div class="w-full flex items-center justify-center">
                 <img class="w-full max-w-4xl" src="/public/frame-381@3x.png" />
               </div>
-            </div>
+            </article>
 
             <!-- Related articles title -->
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex flex-col pb-2 mb-7 gap-2 mt-8"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex flex-col pb-2 mb-7 gap-2 mt-8"
             >
               <div class="font-medium font-markazi text-4xl">
                 Related Articles
@@ -375,14 +422,14 @@
             <!-- Related article thumbnails-->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 mt-2">
               <!-- Interview Thumbnail -->
-              <div class="w-full">
+              <a class="w-full group flex flex-col">
                 <img
                   src="/public/rectangle-520@2x.png"
-                  class="w-full aspect-[1.44] object-cover rounded-[4px]"
+                  class="w-full aspect-[1.44] object-cover rounded-4]"
                 />
 
                 <div
-                  class="flex gap-1 text-[0.5rem] md:text-xs items-center mt-2 flex-wrap"
+                  class="flex gap-1 text-2xs md:text-xs items-center mt-2 flex-wrap"
                 >
                   <div class="flex items-center gap-1">
                     <img
@@ -402,23 +449,23 @@
                   </div>
                 </div>
 
-                <a
-                  class="text-xl leading-5 md:leading-6 font-medium font-markazi line-clamp-2 mt-2 hover:underline underline-offset-1 cursor-pointer"
+                <div
+                  class="text-xl leading-5 group-hover:underline md:leading-6 font-medium font-markazi line-clamp-2 mt-2 hover:underline underline-offset-1 cursor-pointer"
                 >
                   Importing not recommended medicines : Major revelation from
                   top doctor
-                </a>
-              </div>
+                </div>
+              </a>
 
               <!-- Interview Thumbnail -->
-              <div class="w-full">
+              <a class="w-full group flex flex-col">
                 <img
                   src="/public/rectangle-520@2x.png"
-                  class="w-full aspect-[1.44] object-cover rounded-[4px]"
+                  class="w-full aspect-[1.44] object-cover rounded-4]"
                 />
 
                 <div
-                  class="flex gap-1 text-[0.5rem] md:text-xs items-center mt-2 flex-wrap"
+                  class="flex gap-1 text-2xs md:text-xs items-center mt-2 flex-wrap"
                 >
                   <div class="flex items-center gap-1">
                     <img
@@ -438,23 +485,23 @@
                   </div>
                 </div>
 
-                <a
-                  class="text-xl leading-5 md:leading-6 font-medium font-markazi line-clamp-2 mt-2 hover:underline underline-offset-1 cursor-pointer"
+                <div
+                  class="text-xl leading-5 group-hover:underline md:leading-6 font-medium font-markazi line-clamp-2 mt-2 hover:underline underline-offset-1 cursor-pointer"
                 >
                   Importing not recommended medicines : Major revelation from
                   top doctor
-                </a>
-              </div>
+                </div>
+              </a>
 
               <!-- Interview Thumbnail -->
-              <div class="w-full">
+              <a class="w-full group flex flex-col">
                 <img
                   src="/public/rectangle-520@2x.png"
-                  class="w-full aspect-[1.44] object-cover rounded-[4px]"
+                  class="w-full aspect-[1.44] object-cover rounded-4]"
                 />
 
                 <div
-                  class="flex gap-1 text-[0.5rem] md:text-xs items-center mt-2 flex-wrap"
+                  class="flex gap-1 text-2xs md:text-xs items-center mt-2 flex-wrap"
                 >
                   <div class="flex items-center gap-1">
                     <img
@@ -474,36 +521,36 @@
                   </div>
                 </div>
 
-                <a
-                  class="text-xl leading-5 md:leading-6 font-medium font-markazi line-clamp-2 mt-2 hover:underline underline-offset-1 cursor-pointer"
+                <div
+                  class="text-xl leading-5 group-hover:underline md:leading-6 font-medium font-markazi line-clamp-2 mt-2 hover:underline underline-offset-1 cursor-pointer"
                 >
                   Importing not recommended medicines : Major revelation from
                   top doctor
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
 
           <!--  Top Ads-->
           <div class="w-full max-w-full xl:max-w-[450px] flex-shrink-0">
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-2 mb-7"
+              class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-2 mb-7"
             >
               <div class="font-medium font-markazi text-4xl">Top Ads</div>
             </div>
 
             <!-- Premium Ad-->
-            <div
-              class="max-w-sm sm:max-w-md border-2 group border-solid border-secondary bg-[#FFFCF8] mx-auto flex p-[6px] rounded-[6px] gap-4 relative"
+            <a
+              class="max-w-sm group sm:max-w-md border-2 border-solid border-secondary cursor-pointer bg-secondary-50 mx-auto flex p-[6px] rounded-5 gap-4 relative mb-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -530,20 +577,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Premium Ad-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-secondary bg-[#FFFCF8] flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md border-2 border-solid border-secondary cursor-pointer bg-secondary-50 mx-auto flex p-[6px] rounded-5 gap-4 relative"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -570,20 +617,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Rectangle ad green-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-primary flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md mx-auto border-2 border-solid border-primary cursor-pointer flex p-[6px] rounded-5 gap-4 relative mt-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -610,20 +657,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Rectangle ad green-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-primary flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md mx-auto border-2 border-solid border-primary cursor-pointer flex p-[6px] rounded-5 gap-4 relative mt-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -650,11 +697,11 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- button -->
-            <div
-              class="max-w-sm sm:max-w-md mx-auto mt-2 rounded-[5px] bg-primary hover:bg-primary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm"
+            <button
+              class="max-w-sm sm:max-w-md mx-auto mt-2 rounded-5 bg-primary hover:bg-primary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm"
             >
               <div class="relative leading-[20px] uppercase font-medium">
                 View All Ads
@@ -665,7 +712,7 @@
                 alt=""
                 src="/public/icons/Icon=Arrow-white.svg"
               />
-            </div>
+            </button>
 
             <!--
 
@@ -674,23 +721,23 @@
             -->
 
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-9 flex justify-between pb-2 mb-7 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-9 flex justify-between pb-2 mb-7 mt-7"
             >
               <div class="font-medium font-markazi text-4xl">Featured Ads</div>
             </div>
 
             <!-- Premium Ad-->
-            <div
-              class="max-w-sm sm:max-w-md group border-2 border-solid border-secondary bg-[#FFFCF8] mx-auto flex p-[6px] rounded-[6px] gap-4 relative"
+            <a
+              class="max-w-sm group sm:max-w-md border-2 border-solid border-secondary cursor-pointer bg-secondary-50 mx-auto flex p-[6px] rounded-5 gap-4 relative mb-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -717,20 +764,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Premium Ad-->
-            <div
-              class="max-w-sm sm:max-w-md mx-auto group border-2 border-solid border-secondary bg-[#FFFCF8] flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md border-2 border-solid border-secondary cursor-pointer bg-secondary-50 mx-auto flex p-[6px] rounded-5 gap-4 relative"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -757,20 +804,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Rectangle ad green-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-primary flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md mx-auto border-2 border-solid border-primary cursor-pointer flex p-[6px] rounded-5 gap-4 relative mt-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -797,20 +844,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Rectangle ad green-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-primary flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md mx-auto border-2 border-solid border-primary cursor-pointer flex p-[6px] rounded-5 gap-4 relative mt-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -837,11 +884,11 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- button -->
-            <div
-              class="max-w-sm sm:max-w-md mx-auto mt-2 rounded-[5px] bg-primary hover:bg-primary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm"
+            <button
+              class="w-full max-w-sm sm:max-w-md mx-auto mt-2 rounded-5 bg-primary hover:bg-primary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm"
             >
               <div class="relative leading-[20px] uppercase font-medium">
                 View All Ads
@@ -852,7 +899,7 @@
                 alt=""
                 src="/public/icons/Icon=Arrow-white.svg"
               />
-            </div>
+            </button>
 
             <!--
 
@@ -861,23 +908,23 @@
             -->
 
             <div
-              class="w-full border-solid border-b-2 border-[#E1E1E0] h-9 flex justify-between pb-2 mb-7 mt-7"
+              class="w-full border-solid border-b-2 border-gray-light h-9 flex justify-between pb-2 mb-7 mt-7"
             >
               <div class="font-medium font-markazi text-4xl">Popular Ads</div>
             </div>
 
             <!-- Premium Ad-->
-            <div
-              class="max-w-sm sm:max-w-md group border-2 border-solid border-secondary bg-[#FFFCF8] mx-auto flex p-[6px] rounded-[6px] gap-4 relative"
+            <a
+              class="max-w-sm group sm:max-w-md border-2 border-solid border-secondary cursor-pointer bg-secondary-50 mx-auto flex p-[6px] rounded-5 gap-4 relative mb-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -904,20 +951,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Premium Ad-->
-            <div
-              class="max-w-sm sm:max-w-md mx-auto group border-2 border-solid border-secondary bg-[#FFFCF8] flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md border-2 border-solid border-secondary cursor-pointer bg-secondary-50 mx-auto flex p-[6px] rounded-5 gap-4 relative"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -944,20 +991,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Rectangle ad green-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-primary flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md mx-auto border-2 border-solid border-primary cursor-pointer flex p-[6px] rounded-5 gap-4 relative mt-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -984,20 +1031,20 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- Rectangle ad green-->
-            <div
-              class="max-w-sm sm:max-w-md group mx-auto border-2 border-solid border-primary flex p-[6px] rounded-[6px] gap-4 relative mt-2"
+            <a
+              class="max-w-sm group sm:max-w-md mx-auto border-2 border-solid border-primary cursor-pointer flex p-[6px] rounded-5 gap-4 relative mt-2"
             >
               <img
                 src="/public/rectangle-54@2x.png"
-                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-[3px]"
+                class="w-[70px] sm:w-[100px] h-[70px] sm:h-[100px] rounded-3"
               />
 
               <div class="flex flex-col">
                 <div
-                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline cursor-pointer"
+                  class="text-sm sm:text-lg font-medium mt-1 sm:mt-2 group-hover:underline"
                 >
                   MacBook Air M2 512GB 2022 Model
                 </div>
@@ -1024,11 +1071,11 @@
                   Ad
                 </div>
               </div>
-            </div>
+            </a>
 
             <!-- button -->
-            <div
-              class="max-w-sm sm:max-w-md mx-auto mt-2 rounded-[5px] bg-primary hover:bg-primary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm"
+            <button
+              class="w-full max-w-sm sm:max-w-md mx-auto mt-2 rounded-5 bg-primary hover:bg-primary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm"
             >
               <div class="relative leading-[20px] uppercase font-medium">
                 View All Ads
@@ -1039,7 +1086,7 @@
                 alt=""
                 src="/public/icons/Icon=Arrow-white.svg"
               />
-            </div>
+            </button>
           </div>
         </section>
 
@@ -1057,7 +1104,7 @@
         <!-- Leave a comment -->
         <div class="w-full max-w-full xl:max-w-[calc(100%_-_450px)]">
           <div
-            class="w-full border-solid border-b-2 border-[#E1E1E0] h-fit flex justify-between pb-2 mb-7 gap-2 mt-8"
+            class="w-full border-solid border-b-2 border-gray-light h-fit flex justify-between pb-2 mb-7 gap-2 mt-8"
           >
             <div class="font-medium font-markazi text-4xl">Leave a comment</div>
             <div class="flex gap-3 items-center">
@@ -1076,7 +1123,7 @@
                 src="/public/icons/Icon=logo-linkedin.svg"
                 alt=""
               />
-              <div class="w-0.5 bg-[#E1E1E0] h-6"></div>
+              <div class="w-0.5 bg-gray-light h-6"></div>
               <div>Login</div>
             </div>
           </div>
@@ -1094,7 +1141,7 @@
             />
 
             <div
-              class="w-full p-3 md:p-5 border border-solid border-[#BDBDBD] rounded"
+              class="w-full p-3 md:p-5 border border-solid border-gray-dark rounded"
             >
               <div class="text-sm md:text-base">
                 Your email address will not be published. Required fields are
@@ -1103,28 +1150,28 @@
 
               <div class="grid grid-cols-1 md:grid-cols-3 mt-5 gap-3">
                 <input
-                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB]"
+                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark"
                   placeholder="Name *"
                 />
                 <input
-                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB]"
+                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark"
                   placeholder="Email *"
                 />
                 <input
-                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB]"
+                  class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark"
                   placeholder="Website *"
                 />
               </div>
 
               <textarea
-                class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-[#CBCBCB] font-inter mt-3"
+                class="w-full py-4 px-4 border border-solid outline-none rounded-lg border-gray-dark font-inter mt-3"
                 placeholder="Comment *"
                 rows="5"
               ></textarea>
 
               <!-- button -->
               <div
-                class="w-fit mt-2 rounded-[5px] bg-secondary hover:bg-secondary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm relative leading-[20px] uppercase font-medium"
+                class="w-fit mt-2 rounded-5 bg-secondary hover:bg-secondary/90 transition-all cursor-pointer text-white flex flex-row h-fit py-2.5 px-4 items-center justify-center gap-[8px] text-sm relative leading-[20px] uppercase font-medium"
               >
                 Post Comment
               </div>
@@ -1132,7 +1179,9 @@
           </div>
 
           <!-- Comments Count-->
-          <div class="w-full border-b-2 border-solid border-[#E1E1E0] h-9 mt-8">
+          <div
+            class="w-full border-b-2 border-solid border-gray-light h-9 mt-8"
+          >
             <div
               class="h-full w-fit border-b-2 border-secondary border-solid font-bold"
             >
@@ -1230,7 +1279,7 @@
 
 
     -->
-    <footer class="w-full bg-[#101010]">
+    <footer class="w-full bg-black-footer">
       <div class="w-full max-w-[1550px] mx-auto mt-8 px-5 md:px-8 py-11">
         <!-- Line 1 -->
         <div
@@ -1244,7 +1293,7 @@
           <div class="text-white flex items-center gap-5">
             Do you want to be a reporter? Apply Now!
             <button
-              class="bg-secondary text-base cursor-pointer text-black font-montserrat uppercase py-2.5 px-4 w-[185px] font-medium rounded-[5px] flex items-center justify-center"
+              class="bg-secondary text-base cursor-pointer text-black font-montserrat uppercase py-2.5 px-4 w-[185px] font-medium rounded-5 flex items-center justify-center"
             >
               Register now
             </button>
@@ -1264,7 +1313,7 @@
 
             <div class="mt-3 flex">
               <input
-                class="w-full max-w-[335px] text-white bg-transparent pt-[10px] pb-[21px] border-b border-solid border-white/10 outline-none caret-white"
+                class="w-full max-w-[335px] text-white text-base bg-transparent pt-[10px] pb-[21px] border-b border-solid border-white/10 outline-none caret-white"
                 placeholder="Email address"
               />
 
@@ -1279,87 +1328,87 @@
             <!-- Media-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">Media</div>
-              <div class="whitespace-nowrap">About us</div>
-              <div class="whitespace-nowrap">Contact Us</div>
-              <div class="whitespace-nowrap">Privacy Policy</div>
-              <div class="whitespace-nowrap">Terms & Conditions</div>
+              <a class="whitespace-nowrap">About us</a>
+              <a class="whitespace-nowrap">Contact Us</a>
+              <a class="whitespace-nowrap">Privacy Policy</a>
+              <a class="whitespace-nowrap">Terms & Conditions</a>
             </div>
 
             <!-- My Ads-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">My Ads</div>
-              <div class="whitespace-nowrap">Sell Fast</div>
-              <div class="whitespace-nowrap">Ad Promotions</div>
-              <div class="whitespace-nowrap">Privacy Policy</div>
-              <div class="whitespace-nowrap">Terms & Conditions</div>
+              <a class="whitespace-nowrap">Sell Fast</a>
+              <a class="whitespace-nowrap">Ad Promotions</a>
+              <a class="whitespace-nowrap">Privacy Policy</a>
+              <a class="whitespace-nowrap">Terms & Conditions</a>
             </div>
 
             <!-- Contact Us-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">Contact Us</div>
-              <div class="whitespace-nowrap">info@sannasa.lk</div>
-              <div class="whitespace-nowrap">WhatsApp</div>
+              <a class="whitespace-nowrap">info@sannasa.lk</a>
+              <a class="whitespace-nowrap">WhatsApp</a>
             </div>
 
             <!-- Follow us-->
             <div class="w-fit flex flex-col gap-5 text-sm">
               <div class="text-secondary text-base">Follow Us</div>
               <div class="flex gap-1">
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-facebook.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-instagram.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-linkedin.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-youtube.svg"
                   />
-                </div>
+                </a>
 
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-twitter.svg"
                   />
-                </div>
+                </a>
               </div>
 
               <div class="flex gap-1 items-center">
-                <div
-                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-[5px]"
+                <a
+                  class="w-[30px] h-[30px] flex items-center justify-center bg-white rounded-5"
                 >
                   <img
                     class="w-[18px]"
                     src="/public/icons/Icon=logo-whatsapp.svg"
                   />
-                </div>
+                </a>
                 Chat on WhatsApp
               </div>
             </div>

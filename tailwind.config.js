@@ -4,21 +4,41 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#23A45A",
-        "primary-dark": "#272727",
-        "gray": "#767676",
-        "secondary": "#F38D2E"
-        // "primary-light-default": "#fff",
-        // gray: "#101010",
-        // "primary-dark-default": "#272727",
-        // peachpuff: "#ffd6af",
-        // black: "#000",
-        // secondary: "#f38d2e",
-        // "primary-primary": "#23a45a",
-        // "primary-light-divider": "#e1e1e0",
-        // "text-gray": "#767676",
-        // snow: "#fffcf8",
-        // "primary-dark-hover": "#373737",
+        "primary": {
+          DEFAULT: "#23A45A",
+          50: '#96E9B9',
+          100: '#85E5AE',
+          200: '#64DE98',
+          300: '#42D781',
+          400: '#2AC66C',
+          500: '#23A45A',
+          600: '#197641',
+          700: '#0F4827',
+          800: '#05190E',
+          dark: '#272727'
+        },
+
+        "gray": {
+          DEFAULT: "#767676",
+          light: "#E1E1E0",
+          dark: "#cbcbcb"
+        },
+        "secondary": {
+          DEFAULT: "#F38D2E",
+          50: '#FFFCF8',
+          100: '#FCE1C8',
+          200: '#FACCA2',
+          300: '#F7B77B',
+          400: '#F5A255',
+          500: '#F38D2E',
+          600: '#DC710D',
+          700: '#A7560A',
+          800: '#723A07',
+        },
+        "black": {
+          DEFAULT: "#000000",
+          footer: "#101010"
+        }
       },
       fontFamily: {
         inter: "Inter",
@@ -26,23 +46,18 @@ module.exports = {
         "dm-sans": "'DM Sans'",
         montserrat: "Montserrat",
       },
+      fontSize: {
+        "2xs": "0.5rem"
+      },
+      borderRadius: {
+        3: '3px',
+        4: '4px',
+        5: "5px"
+      }
     },
-    // fontSize: {
-    //   sm: "14px",
-    //   base: "16px",
-    //   xs: "12px",
-    //   "25xl": "44px",
-    //   mini: "15px",
-    //   mid: "17px",
-    //   "3xl": "22px",
-    //   "5xl": "24px",
-    //   "9xl": "28px",
-    //   "17xl": "36px",
-    //   "29xl": "48px",
-    // },
   },
   corePlugins: {
-    preflight: false,
+    preflight: true,
   },
   plugins: [
     require('tailwind-scrollbar-hide')

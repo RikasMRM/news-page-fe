@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   @apply leading-[normal] m-0 font-inter;
 }
@@ -10,6 +11,11 @@ body {
   border-width: 0;
   box-sizing: border-box;
 }
-.popup-overlay {
-  @apply flex flex-col fixed inset-0;
+
+a {
+  @apply cursor-pointer;
+}
+
+button {
+  @apply hover:opacity-75 cursor-pointer transition-all;
 }
